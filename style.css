@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s; /* Hace que el cambio de color sea suave */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+h2 { color: #0066cc; }
+
+.caja-texto {
+    background-color: white;
+    border-left: 5px solid #0066cc;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1); /* Sombra para darle relieve */
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto; /* Centra la imagen */
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+w
