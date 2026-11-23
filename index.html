@@ -3,88 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El famoso Hola Mundo</title>
+    <meta name="description" content="Descubre qué significa el programa Hola, mundo, cómo se convirtió en una tradición y cómo se escribe en distintos lenguajes.">
+    <meta name="theme-color" content="#101c32">
+    <title>Hola, mundo: historia y primer programa</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a class="salto-contenido" href="#contenido">Saltar al contenido</a>
 
-    <header>
-        <h1>HOLA MUNDO</h1>
-        <p><em>El rito de iniciación de todo programador</em></p>
-        <button id="boton-tema">Cambiar a Modo Oscuro</button>
+    <header class="cabecera" id="inicio">
+        <div class="contenedor">
+            <div class="presentacion">
+                <p class="etiqueta">PRIMEROS PASOS EN PROGRAMACIÓN</p>
+                <h1>Hola, mundo<span>.</span></h1>
+                <p class="subtitulo">Dos palabras sencillas. Una tradición que ha acompañado a generaciones de programadores.</p>
 
+                <nav class="navegacion" aria-label="Navegación principal">
+                    <a href="#significado">¿Qué significa?</a>
+                    <a href="#historia">Su historia</a>
+                    <a href="#importancia">Por qué importa</a>
+                    <a href="#ejemplos">Ejemplos</a>
+                </nav>
+
+                <button id="boton-tema" type="button">Cambiar a modo oscuro</button>
+            </div>
+        </div>
     </header>
 
-    <main>
-        <section class="caja-texto" id="que-es">
-            <h2>¿Qué es y cómo funciona?</h2>
-            <p>El "Hola Mundo" es el programa más simple que se puede escribir en cualquier lenguaje. Su única finalidad es mostrar un texto en la pantalla o consola. No tiene lógica compleja; su función principal es <strong>verificar que el entorno de desarrollo funciona</strong> (que el compilador y el editor están bien configurados).</p>
-            <p>Como dijo Dennis Ritchie (creador de C): <b>"C es peculiar, imperfecto y un enorme éxito"</b>.</p>
-            
-            <p>Lo que genera es una salida de texto <em>(Standard Output)</em>. El programa lee la instrucción, toma el texto entre comillas y lo envía directamente a la consola. Funciona como un mensajero: el código da la orden y la computadora la ejecuta.</p>
-            
-            <p>Aquí puedes ver un ejemplo en Python:</p>
-            <pre><code>print("¡Hola, mundo!")</code></pre>
-            
-            <p><strong>Fuente de esta sección:</strong> <a href="https://developer.mozilla.org/es/" target="_blank" rel="noopener">MDN Web Docs (Documentación Oficial)</a></p>
+    <main class="contenedor contenido" id="contenido">
+        <section class="seccion seccion-destacada" id="significado" aria-labelledby="titulo-significado">
+            <p class="numero-seccion">01 / EL CONCEPTO</p>
+            <h2 id="titulo-significado">¿Qué es “Hola, mundo”?</h2>
+            <p>“Hola, mundo” es un programa pequeño que muestra un mensaje en la pantalla o en la consola. Suele ser uno de los primeros ejercicios al aprender un lenguaje de programación porque permite comprobar, de forma sencilla, que podemos escribir una instrucción y obtener un resultado.</p>
+            <p>La idea es simple: el programador escribe una orden y la computadora la ejecuta. En este caso, la orden consiste en mostrar un texto.</p>
+
+            <div class="bloque-codigo">
+                <div class="encabezado-codigo">
+                    <span>Ejemplo en Python</span>
+                    <span class="punto-codigo" aria-hidden="true"></span>
+                </div>
+                <pre><code>print("¡Hola, mundo!")</code></pre>
+            </div>
+
+            <aside class="nota">
+                **Una aclaración:** este ejemplo confirma que una instrucción básica puede ejecutarse y producir una salida. No comprueba por sí solo que todo el entorno de desarrollo esté configurado correctamente.
+            </aside>
         </section>
 
-        <section class="caja-texto" id="historia">
-            <h2>El Origen Histórico</h2>
-            <p>La tradición de usar este saludo no nació con el libro de 1978, aunque ese libro fue el que la popularizó. Brian Kernighan ya había utilizado las palabras "hello" y "world" en un tutorial sobre el lenguaje B en 1972. La fórmula exacta que conocemos hoy apareció en un memorando interno de Bell Labs en 1974, escrito por el propio Kernighan.</p>
-            <p>Finalmente, se hizo mundialmente famosa cuando se incluyó como el primer ejemplo en el legendario libro <em>The C Programming Language</em>, coescrito con Dennis Ritchie en 1978.</p>
-            
-            <blockquote>
-                <p>"Mi memoria es difusa ahora. Lo que sí recuerdo es que había visto una caricatura que mostraba un huevo y una chica y la chica decía: 'Hola, mundo'"</p>
-                <cite>— Brian Kernighan, en una entrevista</cite>
-            </blockquote>
+        <section class="seccion" id="historia" aria-labelledby="titulo-historia">
+            <p class="numero-seccion">02 / EL RECORRIDO</p>
+            <h2 id="titulo-historia">¿De dónde viene esta tradición?</h2>
+            <p>La historia no tiene un único momento mágico. Brian Kernighan utilizó un ejemplo con las palabras “hello” y “world” en un tutorial del lenguaje B a comienzos de los años setenta. Después apareció una versión para C en un memorando de Bell Labs. La tradición se extendió ampliamente cuando el ejemplo llegó al libro <em>The C Programming Language</em>, publicado en 1978 y escrito por Brian Kernighan y Dennis Ritchie.</p>
 
-            <p><strong>Fuente de esta sección:</strong> <a href="https://www.hackerrank.com/blog/the-history-of-hello-world/" target="_blank" rel="noopener">The History of 'Hello, World'</a></p>
+            <ol class="linea-tiempo">
+                <li>
+                    <time datetime="1972">1972</time>
+                    <div>
+                        <h3>Un ejemplo en el lenguaje B</h3>
+                        <p>Kernighan empleó las palabras “hello” y “world” en un tutorial introductorio. Era un ejemplo didáctico, no todavía la versión moderna más conocida.</p>
+                    </div>
+                </li>
+                <li>
+                    <time datetime="1974">1974</time>
+                    <div>
+                        <h3>Una versión para C</h3>
+                        <p>El memorando de Bell Labs <em>Programming in C: A Tutorial</em> incluyó una versión del programa en el lenguaje C.</p>
+                    </div>
+                </li>
+                <li>
+                    <time datetime="1978">1978</time>
+                    <div>
+                        <h3>El ejemplo se vuelve famoso</h3>
+                        <p>El libro <em>The C Programming Language</em> ayudó a convertir el saludo en una referencia para quienes comienzan a programar.</p>
+                    </div>
+                </li>
+            </ol>
         </section>
 
-        <section class="caja-texto" id="importancia">
-            <h2>La importancia de la primera línea</h2>
-            <p>No debemos ver el "Hola Mundo" como una simple línea de texto, sino como un rito de iniciación. Aunque parezca una tontería, rompe el hielo con la sintaxis, te obliga a configurar tu entorno y te da la primera victoria psicológica: ver que tu código hace algo en la pantalla.</p>
-            
+        <section class="seccion seccion-importancia" id="importancia" aria-labelledby="titulo-importancia">
+            <p class="numero-seccion">03 / EL PRIMER LOGRO</p>
+            <h2 id="titulo-importancia">¿Por qué sigue siendo importante?</h2>
+            <p>Un primer programa no necesita ser complicado. “Hola, mundo” sirve para familiarizarse con la escritura de instrucciones, conocer la forma básica de ejecutar un programa y comprobar que algo creado por nosotros puede producir un resultado.</p>
+
             <figure>
-                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=400" alt="Un programador frente a su computadora">
-                <figcaption>El escenario donde todo "Hola Mundo" comienza.</figcaption>
+                <img
+                    src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200"
+                    alt="Código de programación visible en la pantalla de una computadora"
+                    loading="lazy"
+                    decoding="async"
+                >
+                <figcaption>Todo proyecto comienza con una primera instrucción.</figcaption>
             </figure>
-            
-            <p>Hoy en día, el Hola Mundo ya no es solo una prueba de que el compilador funciona. Es el símbolo universal de que la curiosidad te ha llevado a abrir un editor de código por primera vez. Es la línea que une a todos los programadores del planeta.</p>
-            
-            <p><strong>Fuente de esta sección:</strong> <a href="https://learn.microsoft.com/es-es/shows/ask-the-expert/ask-the-expert-hello-brian-a-conversation-with-dr-brian-kernighan-creator-of-hello-world" target="_blank" rel="noopener">The  Dr. Brian Kernighan (Microsoft Learn)</a></p>
+
+            <p>Con el tiempo, el ejercicio se convirtió en una especie de bienvenida a la programación. Su valor no está en la complejidad del código, sino en lo que representa: el primer paso entre aprender una idea y verla funcionar.</p>
         </section>
 
-        <section class="caja-texto" id="ejemplos">
-            <h2>El mismo objetivo en diferentes idiomas</h2>
-            <p>Aunque la lógica es idéntica, la sintaxis cambia dependiendo del lenguaje:</p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Lenguaje</th>
-                        <th>Código</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Python</td>
-                        <td><code>print("¡Hola, mundo!")</code></td>
-                    </tr>
-                    <tr>
-                        <td>JavaScript</td>
-                        <td><code>console.log("¡Hola, mundo!")</code></td>
-                    </tr>
-                    <tr>
-                        <td>C++</td>
-                        <td><code>std::cout &lt;&lt; "¡Hola, mundo!";</code></td>
-                    </tr>
-                </tbody>
-            </table>
+        <section class="seccion" id="ejemplos" aria-labelledby="titulo-ejemplos">
+            <p class="numero-seccion">04 / EN DISTINTOS LENGUAJES</p>
+            <h2 id="titulo-ejemplos">El mismo mensaje, distintas instrucciones</h2>
+            <p>El resultado puede ser el mismo, aunque cada lenguaje tiene su propia sintaxis, es decir, sus propias reglas para escribir instrucciones.</p>
+
+            <div class="tabla-contenedor" role="region" aria-label="Ejemplos de Hola, mundo en distintos lenguajes" tabindex="0">
+                <table>
+                    <caption>Comparación de instrucciones básicas</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Lenguaje</th>
+                            <th scope="col">Instrucción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Python</th>
+                            <td><code>print("¡Hola, mundo!")</code></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">JavaScript</th>
+                            <td><code>console.log("¡Hola, mundo!")</code></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">C++</th>
+                            <td><code>std::cout &lt;&lt; "¡Hola, mundo!";</code></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="seccion fuentes" id="fuentes" aria-labelledby="titulo-fuentes">
+            <p class="numero-seccion">PARA SEGUIR INVESTIGANDO</p>
+            <h2 id="titulo-fuentes">Fuentes y lecturas</h2>
+            <ul>
+                <li><a href="https://learn.microsoft.com/es-es/shows/ask-the-expert/ask-the-expert-hello-brian-a-conversation-with-dr-brian-kernighan-creator-of-hello-world" target="_blank" rel="noopener noreferrer">Microsoft Learn — Entrevista a Brian Kernighan sobre “Hello, World”</a></li>
+                <li><a href="https://cm-bell-labs.github.io/who/dmr/index.html" target="_blank" rel="noopener noreferrer">Bell Labs — Archivo de Dennis M. Ritchie y materiales históricos sobre C</a></li>
+                <li><a href="https://docs.python.org/3/library/functions.html#print" target="_blank" rel="noopener noreferrer">Documentación oficial de Python — función print()</a></li>
+            </ul>
         </section>
     </main>
-    <footer>
-        <p>Creado por Guillermo Contreras - Portafolio 2026</p>
+
+    <footer class="pie-pagina">
+        <div class="contenedor">
+            <p><strong>Hola, mundo.</strong> Un proyecto de práctica de Guillermo Contreras.</p>
+            <p>Desarrollado para aprender y mejorar HTML y CSS, paso a paso.</p>
+            <a href="#inicio">Volver al inicio ↑</a>
+        </div>
     </footer>
 
     <script src="script.js"></script>
